@@ -35,13 +35,8 @@
 </script>
 
 <div class="home">
-  <div class="home__wrapper">
-    <div
-      class="home__icon"
-      on:mouseenter={animateLetters}
-      on:click={handleClickToggleVideo}
-      on:keyup={handleKeyPressToggleVideo}
-    >
+  <div class="home__wrapper" on:mouseenter={animateLetters}>
+    <div class="home__icon" on:click={handleClickToggleVideo} on:keyup={handleKeyPressToggleVideo}>
       <PlayIcon width="24" height="24" />
     </div>
     <p class="home__p">play reel</p>
@@ -106,7 +101,7 @@
     cursor: pointer;
   }
 
-  .home__icon:hover + .home__p {
+  .home__wrapper:hover .home__p {
     opacity: 1;
     transform: translateY(0);
   }
