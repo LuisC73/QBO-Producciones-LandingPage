@@ -22,6 +22,11 @@
     stroke: #c4302b;
   }
 
+  .primary {
+    fill: #c4302b;
+    stroke: #c4302b;
+  }
+
   .default-outline {
     fill: transparent;
     stroke: #fff;

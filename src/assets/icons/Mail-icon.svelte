@@ -22,6 +22,11 @@
     stroke: gray;
   }
 
+  .primary {
+    fill: gray;
+    stroke: gray;
+  }
+
   .default-outline {
     fill: transparent;
     stroke: #fff;

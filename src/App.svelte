@@ -8,9 +8,11 @@
   import phrases from "./helpers/phrases";
   import ButtonWpp from "./components/ui/ButtonWpp.svelte";
   import ScrollTop from "./components/ui/ScrollTop.svelte";
+  import Menu from "./components/common/menu/Menu.svelte";
 </script>
 
 <main>
+  <Menu />
   <Home />
   <About />
   <Phrase phraseText={phrases.initial} />

@@ -18,5 +18,6 @@
     height: 40px;
     border-radius: 6px;
     background-color: #25d366;
+    z-index: 3;
   }
 </style>

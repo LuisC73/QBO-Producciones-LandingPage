@@ -111,7 +111,7 @@
     width: 100vw;
     height: 100vh;
     background-color: var(--color-secondary);
-    z-index: 3;
+    z-index: 6;
   }
 
   .our-work__modal-img {

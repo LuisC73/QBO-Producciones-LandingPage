@@ -1,13 +1,11 @@
 <script>
-  import FacebookIcon from "../../../assets/icons/Facebook-icon.svelte";
   import InstagramIcon from "../../../assets/icons/Instagram-icon.svelte";
   import MailIcon from "../../../assets/icons/Mail-icon.svelte";
-  import VimeoIcon from "../../../assets/icons/Vimeo-icon.svelte";
   import YoutubeIcon from "../../../assets/icons/Youtube-icon.svelte";
   import ContactForm from "./Contact-form.svelte";
 </script>
 
-<section class="contact">
+<section class="contact" id="Contact">
   <h2 class="contact__title">Contáctanos</h2>
   <div class="contact__wrapper">
     <div class="contact__col">
@@ -23,12 +21,6 @@
       <div class="contact__flex">
         <a href="https://www.youtube.com/@anamanuelaramirezcurequia1409" class="contact__link">
           <YoutubeIcon width="18" height="18" />
-        </a>
-        <a href="https://www.youtube.com/@anamanuelaramirezcurequia1409" class="contact__link">
-          <VimeoIcon width="18" height="18" />
-        </a>
-        <a href="https://www.youtube.com/@anamanuelaramirezcurequia1409" class="contact__link">
-          <FacebookIcon width="18" height="18" />
         </a>
         <a href="https://www.youtube.com/@anamanuelaramirezcurequia1409" class="contact__link">
           <InstagramIcon width="18" height="18" />

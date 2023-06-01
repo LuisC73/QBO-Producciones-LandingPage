@@ -3,7 +3,7 @@
   import OurWorkItem from "./OurWork-item.svelte";
 </script>
 
-<section class="our-work">
+<section class="our-work" id="OurWork">
   <h2 class="our-work__title">Nuestro trabajo</h2>
   <div class="our-work__categories">
     <button class="our-work__option our-work__option--active">Todos</button>

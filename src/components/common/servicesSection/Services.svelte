@@ -3,7 +3,7 @@
   import ServicesItem from "./Services-item.svelte";
 </script>
 
-<section class="services">
+<section class="services" id="Services">
   <h2 class="services__title">Nuestros servicios</h2>
   <p class="services__subtitle">Qué podemos ofrecerte</p>
   <div class="services__wrapper">
