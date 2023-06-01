@@ -2,11 +2,11 @@
   export let phraseText = "";
 </script>
 
-<section class="phrase-container">
+<div class="phrase-container">
   <h2 class="phrase__text">
     {phraseText}
   </h2>
-</section>
+</div>
 
 <style>
   .phrase-container {
