@@ -67,7 +67,7 @@
     </a>
   </div>
   <button class="navbar__toggle">
-    <MenuIcon />
+    <MenuIcon width="21" height="21" />
   </button>
 </nav>
 
@@ -77,7 +77,8 @@
     top: 0;
     left: 0;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     place-content: center;
     align-items: center;
     width: 100%;
@@ -99,16 +100,20 @@
   }
 
   .navbar__img {
+    display: none;
     width: 70px;
     height: 70px;
   }
 
   .navbar__list {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 100%;
     height: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   .navbar__item {
@@ -171,21 +176,42 @@
 
   .navbar__icons-social {
     justify-self: end;
-    display: flex;
+    display: none;
     align-items: center;
     column-gap: 15px;
   }
 
   .navbar__toggle {
+    grid-row: 1 / 2;
+    justify-self: end;
     display: block;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: none;
   }
 
   @media (min-width: 768px) {
     .navbar {
       grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
     }
     .navbar__toggle {
       display: none;
+    }
+
+    .navbar__img {
+      display: block;
+    }
+
+    .navbar__icons-social {
+      display: flex;
+    }
+
+    .navbar__list {
+      display: flex;
+      flex-direction: row;
     }
   }
 </style>
