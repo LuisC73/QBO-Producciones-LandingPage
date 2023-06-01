@@ -1,3 +1,8 @@
+<script>
+  import projectsInformation from "../../../helpers/projects";
+  import OurWorkItem from "./OurWork-item.svelte";
+</script>
+
 <section class="our-work">
   <h2 class="our-work__title">Nuestro trabajo</h2>
   <div class="our-work__categories">
@@ -8,9 +13,9 @@
     <button class="our-work__option">Transmedia</button>
   </div>
   <div class="our-work__wrapper">
-    <figure class="our-work__img-container">
-      <img src="" alt="" />
-    </figure>
+    {#each projectsInformation as item (item.id)}
+      <OurWorkItem image={item.image} text={item.text} />
+    {/each}
   </div>
   <button class="our-work__more">Mostrar más</button>
 </section>
@@ -26,7 +31,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    padding-top: 30px;
+    padding-top: 20px;
     margin-bottom: 10px;
     font-size: 4rem;
     font-family: var(--font-bold);
@@ -72,6 +77,35 @@
 
   .our-work__option--active {
     background: var(--color-primary);
+    color: var(--color-white);
+  }
+
+  .our-work__wrapper {
+    width: 100%;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 280px));
+    grid-auto-rows: 160px;
+    gap: 20px;
+  }
+
+  .our-work__more {
+    padding: 10px 20px;
+    margin-top: 40px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background-color: var(--color-secondary);
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: var(--color-black);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .our-work__more:hover {
+    background-color: var(--color-terciary);
     color: var(--color-white);
   }
 

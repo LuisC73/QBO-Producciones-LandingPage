@@ -28,7 +28,6 @@
     font-size: 3rem;
     font-family: var(--font-light);
     line-height: 4rem;
-    text-transform: uppercase;
     text-align: center;
     color: var(--color-font);
   }

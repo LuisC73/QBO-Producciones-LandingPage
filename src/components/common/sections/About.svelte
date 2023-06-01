@@ -1,12 +1,9 @@
-<script>
-  import images from "../helpers/images";
-</script>
-
 <section id="About" class="about">
   <div class="about__flex">
-    <img src={images.iconUp} alt="Icon" class="about__icon" />
+    <img src="https://i.postimg.cc/3w54R1yd/animation-icon-up.gif" alt="Icon" class="about__icon" />
     <h1 class="about__title">
-      Apoyamos proyectos de estudiantes y pequeñas empresas, todo con el fin de crecer juntos.
+      Somos un equipo de cuatro integrantes apasionados por captar el mundo a través del lente,
+      queremos aprender contigo y que tú aprendas con nosotros
     </h1>
   </div>
 </section>
@@ -23,6 +20,7 @@
     display: flex;
     justify-content: center;
     font-size: 2.7rem;
+    text-transform: uppercase;
     line-height: 1.4;
     font-family: var(--font-light);
     color: var(--color-font);

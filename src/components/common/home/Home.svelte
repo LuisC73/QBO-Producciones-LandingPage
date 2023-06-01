@@ -1,8 +1,8 @@
 <script>
-  import PlayIcon from "../assets/icons/Play-icon.svelte";
+  import PlayIcon from "../../../assets/icons/Play-icon.svelte";
   import { onMount } from "svelte";
   import { gsap } from "gsap";
-  import CloseIcon from "../assets/icons/Close-icon.svelte";
+  import CloseIcon from "../../../assets/icons/Close-icon.svelte";
 
   let splitText;
   let isVideoActive = false;

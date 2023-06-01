@@ -1,11 +1,13 @@
 <script>
-  import About from "./components/About.svelte";
-  import Contact from "./components/Contact.svelte";
-  import Home from "./components/Home.svelte";
-  import OurWork from "./components/OurWork.svelte";
-  import Phrase from "./components/Phrase.svelte";
-  import Services from "./components/Services.svelte";
+  import About from "./components/common/sections/About.svelte";
+  import Contact from "./components/common/contact/Contact.svelte";
+  import Home from "./components/common/home/Home.svelte";
+  import OurWork from "./components/common/our-work/OurWork.svelte";
+  import Phrase from "./components/ui/Phrase.svelte";
+  import Services from "./components/common/servicesSection/Services.svelte";
   import phrases from "./helpers/phrases";
+  import ButtonWpp from "./components/ui/ButtonWpp.svelte";
+  import ScrollTop from "./components/ui/ScrollTop.svelte";
 </script>
 
 <main>
@@ -16,6 +18,8 @@
   <Phrase phraseText={phrases.final} />
   <OurWork />
   <Contact />
+  <ButtonWpp />
+  <ScrollTop />
 </main>
 
 <style>
