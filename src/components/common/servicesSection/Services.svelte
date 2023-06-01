@@ -17,6 +17,7 @@
   .services {
     max-width: 1340px;
     padding: 20px;
+    margin: 0 auto;
     text-align: center;
   }
 

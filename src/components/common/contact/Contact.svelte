@@ -37,6 +37,10 @@
 <style>
   .contact {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
     padding: 20px;
@@ -130,7 +134,7 @@
 
   @media (min-width: 768px) {
     .contact {
-      padding: 40px 136.5px;
+      padding: 110px 136.5px 40px;
     }
   }
 </style>

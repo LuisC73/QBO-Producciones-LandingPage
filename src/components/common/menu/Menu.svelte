@@ -16,10 +16,8 @@
   });
 
   onMount(() => {
-    const menuItems = document.querySelectorAll('a[href^="#"]');
+    const menuItems = document.querySelectorAll('a.navbar__link[href^="#"]');
     const sections = document.querySelectorAll("section");
-
-    console.log(sections);
 
     window.addEventListener("scroll", () => {
       const currentScroll = window.pageYOffset;

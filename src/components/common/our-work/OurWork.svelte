@@ -25,6 +25,7 @@
     max-width: 1340px;
     padding: 20px;
     text-align: center;
+    margin: 0 auto;
   }
 
   .our-work__title {
