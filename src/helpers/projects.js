@@ -34,6 +34,20 @@ const projectsInformation = [
     text: "imagen",
     category: "musicales",
   },
+  {
+    id: 6,
+    image: "https://i.postimg.cc/RZ305DTj/image-Home.jpg",
+    video: "/public/videos/8.Animación-Campaña.mp4",
+    text: "imagen",
+    category: "musicales",
+  },
+  {
+    id: 7,
+    image: "https://i.postimg.cc/RZ305DTj/image-Home.jpg",
+    video: "/public/videos/8.Animación-Campaña.mp4",
+    text: "imagen",
+    category: "musicales",
+  },
 ];
 
 export default projectsInformation;

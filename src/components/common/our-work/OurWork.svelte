@@ -3,6 +3,16 @@
   import OurWorkItem from "./OurWork-item.svelte";
   let categorySelect = "todos";
 
+  let filteredProjects = projectsInformation.slice(0, 6);
+  let increment = 2;
+  let currentIndex = 6;
+
+  function showMore() {
+    const endIndex = Math.min(currentIndex + increment, projectsInformation.length);
+    filteredProjects = [...filteredProjects, ...projectsInformation.slice(currentIndex, endIndex)];
+    currentIndex += increment;
+  }
+
   const allCategories = Object.freeze({
     All: "todos",
     Music: "musicales",
@@ -10,8 +20,6 @@
     Shorts: "cortos",
     Transmedia: "transmedia",
   });
-
-  let filteredProjects = projectsInformation;
 
   function handleClickFilter(filterText, e) {
     categorySelect = filterText;
@@ -21,7 +29,8 @@
         (project) => project.category === categorySelect
       );
     } else {
-      filteredProjects = projectsInformation;
+      filteredProjects = projectsInformation.slice(0, 6);
+      currentIndex = 6;
     }
   }
 </script>
@@ -60,7 +69,9 @@
       <OurWorkItem image={item.image} text={item.text} id={item.id} />
     {/each}
   </div>
-  <button class="our-work__more">Mostrar más</button>
+  {#if currentIndex < projectsInformation.length}
+    <button class="our-work__more" on:click={showMore}>Mostrar más</button>
+  {/if}
 </section>
 
 <style>
