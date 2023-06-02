@@ -1,19 +1,62 @@
 <script>
   import projectsInformation from "../../../helpers/projects";
   import OurWorkItem from "./OurWork-item.svelte";
+  let categorySelect = "todos";
+
+  const allCategories = Object.freeze({
+    All: "todos",
+    Music: "musicales",
+    Documental: "documentales",
+    Shorts: "cortos",
+    Transmedia: "transmedia",
+  });
+
+  let filteredProjects = projectsInformation;
+
+  function handleClickFilter(filterText, e) {
+    categorySelect = filterText;
+
+    if (categorySelect !== allCategories.All) {
+      filteredProjects = projectsInformation.filter(
+        (project) => project.category === categorySelect
+      );
+    } else {
+      filteredProjects = projectsInformation;
+    }
+  }
 </script>
 
 <section class="our-work" id="OurWork">
   <h2 class="our-work__title">Nuestro trabajo</h2>
   <div class="our-work__categories">
-    <button class="our-work__option our-work__option--active">Todos</button>
-    <button class="our-work__option">Videoclips musicales</button>
-    <button class="our-work__option">Documentales</button>
-    <button class="our-work__option">Cortos</button>
-    <button class="our-work__option">Transmedia</button>
+    <button
+      class="our-work__option active"
+      on:click={(e) => handleClickFilter("todos", e)}
+      class:active={categorySelect === allCategories.All}>Todos</button
+    >
+    <button
+      class="our-work__option"
+      on:click={(e) => handleClickFilter("musicales", e)}
+      class:active={categorySelect === allCategories.Music}>Videoclips musicales</button
+    >
+    <button
+      class="our-work__option"
+      on:click={(e) => handleClickFilter("documentales", e)}
+      class:active={categorySelect === allCategories.Documental}>Documentales</button
+    >
+    <button
+      class="our-work__option"
+      on:click={(e) => handleClickFilter("cortos", e)}
+      class:active={categorySelect === allCategories.Shorts}>Cortos</button
+    >
+    <button
+      class="our-work__option"
+      on:click={(e) => handleClickFilter("transmedia", e)}
+      class:active={categorySelect === allCategories.Transmedia}>Transmedia</button
+    >
   </div>
   <div class="our-work__wrapper">
-    {#each projectsInformation as item (item.id)}
+    {#each filteredProjects as item (item.id)}
       <OurWorkItem image={item.image} text={item.text} />
     {/each}
   </div>
@@ -76,7 +119,7 @@
     transform: translateY(-5px);
   }
 
-  .our-work__option--active {
+  .our-work__option.active {
     background: var(--color-primary);
     color: var(--color-white);
   }
