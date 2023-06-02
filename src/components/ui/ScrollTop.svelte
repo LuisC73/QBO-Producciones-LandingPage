@@ -39,5 +39,6 @@
 
   .scroll-up.active {
     opacity: 1;
+    z-index: 3;
   }
 </style>
