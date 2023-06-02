@@ -10,6 +10,7 @@
   import YoutubeIcon from "../../../assets/icons/Youtube-icon.svelte";
 
   let isShowMenu = false;
+  let isActiveMobile = false;
 
   window.addEventListener("scroll", () => {
     isShowMenu = window.pageYOffset > 200;
@@ -36,6 +37,10 @@
       });
     });
   });
+
+  function handleClickHamburguer() {
+    isActiveMobile = !isActiveMobile;
+  }
 </script>
 
 <nav class="navbar" class:active={isShowMenu}>
@@ -44,7 +49,7 @@
     alt="Logo QBO"
     class="navbar__img"
   />
-  <ul class="navbar__list">
+  <ul class="navbar__list" class:active={isActiveMobile}>
     <li class="navbar__item">
       <a href="#About" class="navbar__link active">
         <span class="navbar__icon">
@@ -89,7 +94,7 @@
       <MailIcon color="primary" width="18" height="18" />
     </a>
   </div>
-  <button class="navbar__toggle">
+  <button class="navbar__toggle" on:click={handleClickHamburguer}>
     <MenuIcon width="21" height="21" />
   </button>
 </nav>
@@ -105,7 +110,7 @@
     place-content: center;
     align-items: center;
     width: 100%;
-    height: 90px;
+    height: 50px;
     padding: 0 40px;
     background-color: var(--color-white);
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.09);
@@ -129,14 +134,17 @@
   }
 
   .navbar__list {
-    display: none;
+    position: absolute;
+    top: 50px;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     margin: 0;
     padding: 0;
+    transition: transform 0.3s ease-in-out;
   }
 
   .navbar__item {
@@ -214,10 +222,32 @@
     background: none;
   }
 
+  @media (max-width: 768px) {
+    .navbar__list {
+      height: 320px;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(-200%);
+    }
+
+    .navbar__list.active {
+      transform: translateY(0%);
+      width: 100vw;
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .navbar__list.active .navbar__link,
+    .navbar__list.active .navbar__item {
+      width: 100%;
+    }
+  }
+
   @media (min-width: 768px) {
     .navbar {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: 1fr;
+      height: 90px;
     }
     .navbar__toggle {
       display: none;
@@ -232,8 +262,13 @@
     }
 
     .navbar__list {
-      display: flex;
+      position: relative;
+      top: 0;
+      width: 100%;
+      height: 100%;
       flex-direction: row;
+      opacity: 1;
+      pointer-events: all;
     }
   }
 </style>
