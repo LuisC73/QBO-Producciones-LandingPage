@@ -1,19 +1,16 @@
 <script>
   import CloseIcon from "../../../assets/icons/Close-icon.svelte";
+  import projectsInformation from "../../../helpers/projects";
+  import Modal from "../../ui/Modal.svelte";
 
   export let image;
   export let text;
-  let imageUrl = "";
-  let isActiveModal = false;
+  export let id;
 
-  function handleClickCaptureData(e) {
-    imageUrl = e.currentTarget.querySelector("img").src;
-    isActiveModal = true;
-  }
+  let selectedItemId = null;
 
-  function handleDesactiveModal() {
-    imageUrl = "";
-    isActiveModal = false;
+  function openModal(idItem) {
+    selectedItemId = idItem;
   }
 
   function handleKeyCaptureData() {}
@@ -22,30 +19,17 @@
 <div>
   <figure
     class="our-work__img-container"
-    on:click={handleClickCaptureData}
+    on:click={() => openModal(id)}
     on:keypress={handleKeyCaptureData}
   >
     <img src={image} alt={text} class="our-work__img" />
     <figcaption class="our-work__caption">{text}</figcaption>
   </figure>
 
-  {#if isActiveModal}
-    <div class="our-work__modal">
-      <div
-        class="our-work__close"
-        on:click={handleDesactiveModal}
-        on:keypress={handleDesactiveModal}
-      >
-        <CloseIcon />
-      </div>
-      <img src={imageUrl} alt="prueba" class="our-work__modal-img" />
-      <p class="our-work__modal-paragraph">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet rerum facere aliquam
-        asperiores quidem ad possimus ipsum? Optio, quis. Molestias, consequuntur libero? Vero eaque
-        distinctio mollitia, aspernatur itaque fugit harum.
-      </p>
-    </div>
-  {/if}
+  <Modal
+    isOpen={selectedItemId != null}
+    videoUrl={selectedItemId && projectsInformation.find((item) => item.id === selectedItemId).video}
+  />
 </div>
 
 <style>
@@ -98,31 +82,5 @@
   .our-work__img-container:hover::after,
   .our-work__img-container:hover figcaption {
     opacity: 1;
-  }
-
-  .our-work__modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--color-secondary);
-    z-index: 6;
-  }
-
-  .our-work__modal-img {
-    width: 200px;
-    height: 200px;
-  }
-
-  .our-work__close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    cursor: pointer;
   }
 </style>

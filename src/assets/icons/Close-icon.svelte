@@ -27,4 +27,9 @@
     fill: transparent;
     stroke: #fff;
   }
+
+  .default-black {
+    fill: #000;
+    stroke: #000;
+  }
 </style>

@@ -57,7 +57,7 @@
   </div>
   <div class="our-work__wrapper">
     {#each filteredProjects as item (item.id)}
-      <OurWorkItem image={item.image} text={item.text} />
+      <OurWorkItem image={item.image} text={item.text} id={item.id} />
     {/each}
   </div>
   <button class="our-work__more">Mostrar más</button>
