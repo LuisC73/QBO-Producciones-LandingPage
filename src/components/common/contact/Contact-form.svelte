@@ -1,6 +1,11 @@
 <script>
   import emailjs from "@emailjs/browser";
 
+  let fullname = "";
+  let email = "";
+  let phone = "";
+  let message = "";
+
   function sendEmail(e) {
     emailjs.sendForm("service_trskzrh", "template_omu6qf9", e.target, "DGMBQ8NGpO7MTNj5y").then(
       (result) => {
@@ -10,6 +15,11 @@
         console.log("FAILED...", error.text);
       }
     );
+
+    fullname = "";
+    email = "";
+    phone = "";
+    message = "";
   }
 </script>
 
@@ -21,7 +31,7 @@
       name="fullname"
       class="form-contact__input"
       placeholder="Nombre"
-      size="40"
+      bind:value={fullname}
       required
     />
   </label>
@@ -32,6 +42,7 @@
       name="email"
       class="form-contact__input"
       placeholder="Email"
+      bind:value={email}
       required
     />
   </label>
@@ -42,10 +53,17 @@
       name="phone"
       class="form-contact__input"
       placeholder="Teléfono"
+      bind:value={phone}
       required
     />
   </label>
-  <textarea id="Message" class="form-contact__text-area" placeholder="Mensaje" name="message" />
+  <textarea
+    id="Message"
+    class="form-contact__text-area"
+    placeholder="Mensaje"
+    name="message"
+    bind:value={message}
+  />
   <label for="SubmitForm" class="form-contact__label">
     <input type="submit" value="Enviar" id="SubmitForm" class="form-contact__submit" />
   </label>
