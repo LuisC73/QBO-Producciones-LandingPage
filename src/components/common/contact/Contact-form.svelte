@@ -1,8 +1,24 @@
-<form action="" class="form-contact">
+<script>
+  import emailjs from "@emailjs/browser";
+
+  function sendEmail(e) {
+    emailjs.sendForm("service_trskzrh", "template_omu6qf9", e.target, "DGMBQ8NGpO7MTNj5y").then(
+      (result) => {
+        console.log("SUCCESS!", result.text);
+      },
+      (error) => {
+        console.log("FAILED...", error.text);
+      }
+    );
+  }
+</script>
+
+<form on:submit|preventDefault={sendEmail} class="form-contact">
   <label for="Name" class="form-contact__label">
     <input
       type="text"
       id="Name"
+      name="fullname"
       class="form-contact__input"
       placeholder="Nombre"
       size="40"
@@ -10,12 +26,26 @@
     />
   </label>
   <label for="Email" class="form-contact__label">
-    <input type="email" id="Email" class="form-contact__input" placeholder="Email" required />
+    <input
+      type="email"
+      id="Email"
+      name="email"
+      class="form-contact__input"
+      placeholder="Email"
+      required
+    />
   </label>
-  <label for="Phono" class="form-contact__label">
-    <input type="number" id="Phono" class="form-contact__input" placeholder="Teléfono" required />
+  <label for="Phone" class="form-contact__label">
+    <input
+      type="number"
+      id="Phone"
+      name="phone"
+      class="form-contact__input"
+      placeholder="Teléfono"
+      required
+    />
   </label>
-  <textarea id="Message" class="form-contact__text-area" placeholder="Mensaje" />
+  <textarea id="Message" class="form-contact__text-area" placeholder="Mensaje" name="message" />
   <label for="SubmitForm" class="form-contact__label">
     <input type="submit" value="Enviar" id="SubmitForm" class="form-contact__submit" />
   </label>
