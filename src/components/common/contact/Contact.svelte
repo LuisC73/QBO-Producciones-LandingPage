@@ -64,7 +64,7 @@
     justify-content: center;
     padding-top: 20px;
     margin-bottom: 10px;
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: var(--font-bold);
     letter-spacing: 0.3rem;
     text-transform: uppercase;
@@ -135,6 +135,9 @@
   @media (min-width: 768px) {
     .contact {
       padding: 110px 136.5px 40px;
+    }
+    .contact__title {
+      font-size: 4rem;
     }
   }
 </style>
