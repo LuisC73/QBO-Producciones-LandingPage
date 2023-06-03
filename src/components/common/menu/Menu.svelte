@@ -224,7 +224,7 @@
 
   @media (max-width: 768px) {
     .navbar__list {
-      height: 320px;
+      height: 360px;
       opacity: 0;
       pointer-events: none;
       transform: translateY(-200%);
