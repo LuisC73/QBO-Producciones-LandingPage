@@ -31,7 +31,7 @@
   }
 
   @font-face {
-    src: url("/src/assets/font/Futura\ Bold\ font.ttf");
+    src: url("/src/assets/font/Futura\ Heavy\ font.ttf");
     font-family: "Futura Bold";
   }
 

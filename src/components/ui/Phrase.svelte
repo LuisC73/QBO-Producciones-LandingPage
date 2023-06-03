@@ -27,6 +27,7 @@
     padding-top: 30px;
     font-size: 3rem;
     font-family: var(--font-light);
+    font-weight: bold;
     line-height: 4rem;
     text-align: center;
     color: var(--color-font);
