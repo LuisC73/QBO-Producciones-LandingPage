@@ -2,7 +2,7 @@
   import WhatsappIcon from "../../assets/icons/Whatsapp-icon.svelte";
 </script>
 
-<a href="wpp" class="button-wpp">
+<a href="https://wa.me/+573207925550" class="button-wpp">
   <WhatsappIcon width="28" height="28" />
 </a>
 
