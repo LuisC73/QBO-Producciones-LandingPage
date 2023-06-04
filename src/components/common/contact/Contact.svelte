@@ -11,7 +11,7 @@
     <div class="contact__col">
       <h3 class="contact__sub-title">Contáctanos</h3>
       <div class="contact__info">
-        <p class="contact__p">Correo</p>
+        <p class="contact__p">qboproducciones2023@gmail.com</p>
         <p class="contact__p">Numero</p>
         <p class="contact__p">Dirección</p>
       </div>
@@ -19,13 +19,13 @@
     <div class="contact__col">
       <h3 class="contact__sub-title">Síguenos</h3>
       <div class="contact__flex">
-        <a href="https://www.youtube.com/@anamanuelaramirezcurequia1409" class="contact__link">
+        <a href="https://www.youtube.com/@QBOProducciones_" class="contact__link">
           <YoutubeIcon width="18" height="18" />
         </a>
-        <a href="https://www.youtube.com/@anamanuelaramirezcurequia1409" class="contact__link">
+        <a href="https://www.instagram.com/qboproducciones/" class="contact__link">
           <InstagramIcon width="18" height="18" />
         </a>
-        <a href="https://www.youtube.com/@anamanuelaramirezcurequia1409" class="contact__link">
+        <a href="mailto:qboproducciones2023@gmail.com" class="contact__link">
           <MailIcon width="18" height="18" />
         </a>
       </div>

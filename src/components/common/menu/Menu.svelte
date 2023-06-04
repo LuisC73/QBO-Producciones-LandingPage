@@ -84,13 +84,13 @@
     </li>
   </ul>
   <div class="navbar__icons-social">
-    <a href="https://www.youtube.com/@anamanuelaramirezcurequia1409" class="navbar__icon-social">
+    <a href="https://www.youtube.com/@QBOProducciones_" class="navbar__icon-social">
       <YoutubeIcon color="primary" width="18" height="18" />
     </a>
-    <a href="https://www.youtube.com/@anamanuelaramirezcurequia1409" class="navbar__icon-social">
+    <a href="https://www.instagram.com/qboproducciones/" class="navbar__icon-social">
       <InstagramIcon color="primary" width="18" height="18" />
     </a>
-    <a href="https://www.youtube.com/@anamanuelaramirezcurequia1409" class="navbar__icon-social">
+    <a href="mailto:qboproducciones2023@gmail.com" class="navbar__icon-social">
       <MailIcon color="primary" width="18" height="18" />
     </a>
   </div>

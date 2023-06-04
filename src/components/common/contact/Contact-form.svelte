@@ -7,7 +7,7 @@
   let message = "";
 
   function sendEmail(e) {
-    emailjs.sendForm("service_trskzrh", "template_omu6qf9", e.target, "DGMBQ8NGpO7MTNj5y").then(
+    emailjs.sendForm("service_eqrt7k4", "template_omu6qf9", e.target, "DGMBQ8NGpO7MTNj5y").then(
       (result) => {
         console.log("SUCCESS!", result.text);
       },
