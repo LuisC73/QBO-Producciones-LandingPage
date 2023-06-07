@@ -6,6 +6,7 @@
   export let image;
   export let text;
   export let id;
+  export let url = null;
 
   let selectedItemId = null;
 
@@ -17,19 +18,33 @@
 </script>
 
 <div>
-  <figure
-    class="our-work__img-container"
-    on:click={() => openModal(id)}
-    on:keypress={handleKeyCaptureData}
-  >
-    <img src={image} alt={text} class="our-work__img" />
-    <figcaption class="our-work__caption">{text}</figcaption>
-  </figure>
+  {#if !url}
+    <figure
+      class="our-work__img-container"
+      on:click={() => openModal(id)}
+      on:keypress={handleKeyCaptureData}
+    >
+      <img src={image} alt={text} class="our-work__img" />
+      <figcaption class="our-work__caption">{text}</figcaption>
+    </figure>
 
-  <Modal
-    isOpen={selectedItemId != null}
-    videoUrl={selectedItemId && projectsInformation.find((item) => item.id === selectedItemId).video}
-  />
+    <Modal
+      isOpen={selectedItemId != null}
+      videoUrl={selectedItemId &&
+        projectsInformation.find((item) => item.id === selectedItemId).video}
+    />
+  {:else}
+    <a href={url} target="_blank">
+      <figure
+        class="our-work__img-container"
+        on:click={() => openModal(id)}
+        on:keypress={handleKeyCaptureData}
+      >
+        <img src={image} alt={text} class="our-work__img" />
+        <figcaption class="our-work__caption">{text}</figcaption>
+      </figure>
+    </a>
+  {/if}
 </div>
 
 <style>

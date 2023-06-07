@@ -5,13 +5,15 @@ const projectsInformation = [
     video: "/videos/8.Animación-Campaña.mp4",
     text: "imagen",
     category: "musicales",
+    url: null,
   },
   {
     id: 2,
-    image: "https://i.postimg.cc/DZFLGx2T/10-Retrato.jpg",
+    image: "https://i.postimg.cc/sDZVBgdq/home-picture.jpg",
     video: "/videos/8.Animación-Campaña.mp4",
-    text: "imagen",
+    text: "Libera",
     category: "transmedia",
+    url: "https://liberapage.netlify.app/",
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ const projectsInformation = [
     video: "/videos/8.Animación-Campaña.mp4",
     text: "imagen",
     category: "documentales",
+    url: null,
   },
   {
     id: 4,
@@ -26,6 +29,7 @@ const projectsInformation = [
     video: "/videos/8.Animación-Campaña.mp4",
     text: "imagen",
     category: "cortos",
+    url: null,
   },
   {
     id: 5,
@@ -33,6 +37,7 @@ const projectsInformation = [
     video: "/videos/8.Animación-Campaña.mp4",
     text: "imagen",
     category: "musicales",
+    url: null,
   },
   {
     id: 6,
@@ -40,6 +45,7 @@ const projectsInformation = [
     video: "/videos/8.Animación-Campaña.mp4",
     text: "imagen",
     category: "musicales",
+    url: null,
   },
   {
     id: 7,
@@ -47,6 +53,7 @@ const projectsInformation = [
     video: "/videos/8.Animación-Campaña.mp4",
     text: "imagen",
     category: "musicales",
+    url: null,
   },
 ];
 

@@ -66,7 +66,7 @@
   </div>
   <div class="our-work__wrapper">
     {#each filteredProjects as item (item.id)}
-      <OurWorkItem image={item.image} text={item.text} id={item.id} />
+      <OurWorkItem image={item.image} text={item.text} id={item.id} url={item.url} />
     {/each}
   </div>
   {#if currentIndex < projectsInformation.length}
