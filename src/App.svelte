@@ -26,12 +26,12 @@
 
 <style>
   @font-face {
-    src: url("/src/assets/font/Futura\ Book\ font.ttf");
+    src: url("/public/font/Futura\ Book\ font.ttf");
     font-family: "Futura Light";
   }
 
   @font-face {
-    src: url("/src/assets/font/Futura\ Heavy\ font.ttf");
+    src: url("/public/font/Futura\ Heavy\ font.ttf");
     font-family: "Futura Bold";
   }
 
