@@ -53,7 +53,7 @@
         <CloseIcon width="40" height="40" />
       </div>
       <!-- svelte-ignore a11y-media-has-caption -->
-      <video src="../../public/videos/8.Animación-Campaña.mp4" controls />
+      <video src="public/videos/8.Animación-Campaña.mp4" controls />
     </div>
   </div>
 </div>
