@@ -10,4 +10,7 @@ export default defineConfig({
       "@emailjs/browser": path.resolve(__dirname, "node_modules", "@emailjs/browser"),
     },
   },
+  build: {
+    outDir: "dist/public", // Establece el directorio de salida personalizado
+  },
 });
