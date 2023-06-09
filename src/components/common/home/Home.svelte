@@ -53,7 +53,7 @@
         <CloseIcon width="40" height="40" />
       </div>
       <!-- svelte-ignore a11y-media-has-caption -->
-      <video src="/videos/8.Animación-Campaña.mp4" controls />
+      <video src="/videos/reel empresarial-final.mp4" controls />
     </div>
   </div>
 </div>
@@ -99,6 +99,12 @@
     border: 1px solid var(--color-white);
     border-radius: 50%;
     cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+
+  .home__icon:hover{
+    transform: scale(1.05);
+    border-width: 2px;
   }
 
   .home__wrapper:hover .home__p {

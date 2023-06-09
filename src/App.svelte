@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from "svelte";
   import About from "./components/common/sections/About.svelte";
   import Contact from "./components/common/contact/Contact.svelte";
   import Home from "./components/common/home/Home.svelte";
@@ -9,10 +10,23 @@
   import ButtonWpp from "./components/ui/ButtonWpp.svelte";
   import ScrollTop from "./components/ui/ScrollTop.svelte";
   import Menu from "./components/common/menu/Menu.svelte";
+  import Loading from "./components/ui/Loading.svelte";
+
+  let isLoading = true;
+
+  onMount(() => {
+    setTimeout(() => {
+      isLoading = false;
+    }, 5000);
+  });
 </script>
 
-<main>
+<header>
   <Menu />
+  <Loading {isLoading} />
+</header>
+
+<main>
   <Home />
   <About />
   <Phrase phraseText={phrases.initial} />

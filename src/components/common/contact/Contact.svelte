@@ -12,8 +12,7 @@
       <h3 class="contact__sub-title">Contáctanos</h3>
       <div class="contact__info">
         <p class="contact__p">qboproducciones2023@gmail.com</p>
-        <p class="contact__p">Numero</p>
-        <p class="contact__p">Dirección</p>
+        <p class="contact__p">3207925550</p>
       </div>
     </div>
     <div class="contact__col">
