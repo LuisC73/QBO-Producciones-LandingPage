@@ -10,7 +10,7 @@ const projectsInformation = [
   {
     id: 2,
     image: "https://i.postimg.cc/sDZVBgdq/home-picture.jpg",
-    video: "/videos/8.Animación-Campaña.mp4",
+    video: null,
     text: "Libera",
     category: "transmedia",
     url: "https://liberapage.netlify.app/",
@@ -18,26 +18,26 @@ const projectsInformation = [
   {
     id: 3,
     image: "https://i.postimg.cc/XN95nZsz/luna-ld.png",
-    video: "/videos/LD  LUNA OFFICIAL VIDEO.mp4",
+    video: null,
     text: " LD Luna",
     category: "musicales",
-    url: null,
+    url: "https://drive.google.com/file/d/1Tbh4mqu_05XuKPJpuUVOIsQ7wMLszQNp/view?usp=drive_link",
   },
   {
     id: 4,
     image: "https://i.postimg.cc/3JSxhYQq/ma-ld.png",
-    video: "/videos/LD MA OFFICIAL VIDEO.mp4",
+    video: null,
     text: "LD Ma",
     category: "musicales",
-    url: null,
+    url: "https://drive.google.com/file/d/115_91BqtWI6eEvdzsX3G5lO0ld_vV3Lg/view?usp=drive_link",
   },
   {
     id: 5,
     image: "https://i.postimg.cc/4NKrKghq/taki-ld.png",
-    video: "/videos/LD TAKI TAC OFFICIAL VIDEO.mp4",
+    video: null,
     text: "LD Taki Tac",
     category: "musicales",
-    url: null,
+    url: "https://drive.google.com/file/d/1-ajoFKm1fOxTYl3g5czbxty2cG33y4tG/view?usp=drive_link",
   },
   {
     id: 6,
@@ -62,6 +62,14 @@ const projectsInformation = [
     text: "Invitación Documental",
     category: "animacion",
     url: null,
+  },
+  {
+    id: 9,
+    image: "https://i.postimg.cc/KvStS7FV/doc-ld.png",
+    video: null,
+    text: "Documental LD",
+    category: "documentales",
+    url: "https://drive.google.com/file/d/1bZB7kcoNVJSWQWoMq32dHcfvES5BzwOP/view",
   },
 ];
 
