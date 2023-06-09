@@ -9,7 +9,7 @@ const cardsInformation = [
     id: 2,
     icon: "https://i.postimg.cc/nrk1xznc/animation-produccion.gif",
     title: "Cortos colaborativos.",
-    text: `Si tienes una idea y no tienes equipo de producción, somos tu primera opción.`,
+    text: `Si tienes una idea y no tienes equipo de producción, somos tu mejor opción.`,
   },
 ];
 

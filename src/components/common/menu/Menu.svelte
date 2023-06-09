@@ -8,6 +8,7 @@
   import PhoneIcon from "../../../assets/icons/Phone-icon.svelte";
   import StarIcon from "../../../assets/icons/Star-icon.svelte";
   import YoutubeIcon from "../../../assets/icons/Youtube-icon.svelte";
+  import CameraIcon from "../../../assets/icons/Camera-icon.svelte";
 
   let isShowMenu = false;
   let isActiveMobile = false;
@@ -51,11 +52,19 @@
   />
   <ul class="navbar__list" class:active={isActiveMobile}>
     <li class="navbar__item">
-      <a href="#About" class="navbar__link active">
+      <a href="#Init" class="navbar__link active">
         <span class="navbar__icon">
           <DiamontIcon width="21" height="21" />
         </span>
         <span class="navbar__text"> QBO </span>
+      </a>
+    </li>
+    <li class="navbar__item">
+      <a href="#About" class="navbar__link active">
+        <span class="navbar__icon">
+          <CameraIcon width="21" height="21" />
+        </span>
+        <span class="navbar__text"> Sobre <br> Nosotros </span>
       </a>
     </li>
     <li class="navbar__item">

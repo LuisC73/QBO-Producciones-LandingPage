@@ -41,7 +41,7 @@
     </div>
     <p class="home__p">play reel</p>
     <!-- svelte-ignore a11y-missing-content -->
-    <a href="#About" class="home__scroll" />
+    <a href="#Init" class="home__scroll" />
   </div>
   <div class="home__video-container" class:active={isVideoActive}>
     <div class="home__video">

@@ -1,8 +1,9 @@
 <script>
   import { onMount } from "svelte";
-  import About from "./components/common/sections/About.svelte";
+  import SectionInit from "./components/common/sections/SectionInit.svelte";
   import Contact from "./components/common/contact/Contact.svelte";
   import Home from "./components/common/home/Home.svelte";
+  import About from "./components/common/sections/About.svelte";
   import OurWork from "./components/common/our-work/OurWork.svelte";
   import Phrase from "./components/ui/Phrase.svelte";
   import Services from "./components/common/servicesSection/Services.svelte";
@@ -28,8 +29,9 @@
 
 <main>
   <Home />
-  <About />
+  <SectionInit />
   <Phrase phraseText={phrases.initial} />
+  <About />
   <Services />
   <Phrase phraseText={phrases.final} />
   <OurWork />
