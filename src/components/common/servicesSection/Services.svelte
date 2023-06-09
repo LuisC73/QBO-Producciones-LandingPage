@@ -51,8 +51,10 @@
 
   .services__wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 340px));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 340px));
     grid-template-rows: 260px;
+    place-content: center;
+    place-items: center;
     gap: 15px;
     width: 100%;
     margin-top: 40px;
