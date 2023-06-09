@@ -5,7 +5,7 @@
 
 <section class="services" id="Services">
   <h2 class="services__title">Nuestros servicios</h2>
-  <p class="services__subtitle">Qué podemos ofrecerte</p>
+  <p class="services__subtitle">¿Qué podemos ofrecerte?</p>
   <div class="services__wrapper">
     {#each cardsInformation as item (item.id)}
       <ServicesItem image={item.icon} title={item.title} text={item.text} />

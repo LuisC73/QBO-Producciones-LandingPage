@@ -4,7 +4,7 @@
   let categorySelect = "todos";
 
   let filteredProjects = projectsInformation.slice(0, 6);
-  let increment = 2;
+  let increment = 1;
   let currentIndex = 6;
 
   function showMore() {
@@ -19,6 +19,7 @@
     Documental: "documentales",
     Shorts: "cortos",
     Transmedia: "transmedia",
+    Animacion: "animacion",
   });
 
   function handleClickFilter(filterText, e) {
@@ -63,13 +64,18 @@
       on:click={(e) => handleClickFilter("transmedia", e)}
       class:active={categorySelect === allCategories.Transmedia}>Transmedia</button
     >
+    <button
+    class="our-work__option"
+    on:click={(e) => handleClickFilter("animacion", e)}
+    class:active={categorySelect === allCategories.Animacion}>Animación</button
+  >
   </div>
   <div class="our-work__wrapper">
     {#each filteredProjects as item (item.id)}
       <OurWorkItem image={item.image} text={item.text} id={item.id} url={item.url} />
     {/each}
   </div>
-  {#if currentIndex < projectsInformation.length}
+  {#if currentIndex < projectsInformation.length && categorySelect === allCategories.All}
     <button class="our-work__more" on:click={showMore}>Mostrar más</button>
   {/if}
 </section>

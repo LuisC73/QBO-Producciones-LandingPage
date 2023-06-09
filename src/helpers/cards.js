@@ -3,7 +3,7 @@ const cardsInformation = [
     id: 1,
     icon: "https://i.postimg.cc/XqsntTDB/animation-corto.gif",
     title: "Videoclips musicales.",
-    text: `Producción para artistas emergentes y que se quieren proyectar en el mundo artístico.`,
+    text: `Producción de artistas emergentes y con proyección al mundo artístico.`,
   },
   {
     id: 2,

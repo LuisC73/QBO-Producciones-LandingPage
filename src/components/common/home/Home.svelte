@@ -63,7 +63,7 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    background: url("https://i.postimg.cc/RZ305DTj/image-Home.jpg") center/cover no-repeat;
+    background: url("https://i.postimg.cc/xC1TV03x/image-Home2.jpg") center/cover no-repeat;
   }
 
   .home::after {
