@@ -2,8 +2,9 @@
   <div class="init__flex">
     <img src="https://i.postimg.cc/3w54R1yd/animation-icon-up.gif" alt="Icon" class="init__icon" />
     <h1 class="init__title">
-      Somos un equipo de cuatro integrantes apasionados por captar el mundo a través del lente,
-      queremos aprender contigo y que tú aprendas con nosotros
+      Somos un equipo de cuatro apasionados por captar el mundo a través del lente. Nuestra misión es
+      acompañarte en tu viaje visual y crecer juntos. Estamos comprometidos en brindarte un servicio
+      de calidad y un producto efectivo.
     </h1>
   </div>
 </section>
