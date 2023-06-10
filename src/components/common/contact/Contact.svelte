@@ -83,7 +83,7 @@
   .contact__wrapper {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     row-gap: 40px;
     width: 100%;
     margin-top: 40px;
