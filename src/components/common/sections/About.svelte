@@ -1,11 +1,16 @@
+<script>
+  import MembersContainer from "../members/MembersContainer.svelte";
+
+</script>
 <section id="About" class="about">
   <h2 class="about__title">Sobre Nosotros</h2>
   <p class="about__p">
     Nuestro colectivo trata de una empresa, la cual tiene como razón social la producción y venta de
-    proyectos audiovisuales . Nuestra actividad se basa en la realización de proyectos propios como
-    cortos ficcionales y no ficcionales , además de apoyar productoras o estudiantes quienes bucan
-    una mayor proyección en el mundo audiovisual.
+    proyectos audiovisuales. Nuestra actividad se basa en la realización de proyectos propios como
+    cortos ficcionales y no ficcionales, además de apoyar productoras y estudiantes quienes buscan
+    una mayor proyección en el mundo audiovisual.
   </p>
+  <MembersContainer />
 </section>
 
 <style>

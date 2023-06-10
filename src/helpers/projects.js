@@ -71,6 +71,14 @@ const projectsInformation = [
     category: "documentales",
     url: "https://drive.google.com/file/d/1bZB7kcoNVJSWQWoMq32dHcfvES5BzwOP/view",
   },
+  {
+    id: 10,
+    image: "https://i.postimg.cc/LX96FNym/filminuto.png",
+    video: null,
+    text: "Filminuto Dónde estas final",
+    category: "cortos",
+    url: "https://drive.google.com/file/d/1hgGKgLC8a7olvON10XzEpdEkXUNQXXCl/view",
+  },
 ];
 
 export default projectsInformation;
